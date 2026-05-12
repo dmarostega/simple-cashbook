@@ -1,41 +1,119 @@
-# Manual do Proposta Fácil
+# Manual — Simple Cashbook
 
 ## Visão geral
 
-O Proposta Fácil ajuda profissionais autônomos e pequenos negócios a criar propostas comerciais, controlar status e enviar um link público para o cliente aprovar ou recusar.
+O Simple Cashbook é um sistema para controle financeiro simples de receitas, despesas, categorias e fluxo de caixa.
 
-## Como cadastrar clientes
+## Dashboard
 
-1. Acesse a área autenticada.
-2. Abra `Clientes`.
-3. Informe nome, e-mail, telefone, documento, endereço e observações.
-4. Salve. Clientes ficam isolados por usuário.
+O dashboard apresentará uma visão geral das finanças do usuário.
 
-## Como criar propostas
+Informações previstas:
 
-1. Abra `Propostas` e selecione um cliente.
-2. Defina título, descrição, validade, observações e condições comerciais.
-3. Adicione itens com descrição, quantidade e valor unitário.
-4. Opcionalmente informe desconto.
-5. O sistema calcula subtotal e total e valida o limite do plano.
+- Receitas do mês
+- Despesas do mês
+- Saldo previsto
+- Contas pendentes
+- Contas vencidas
+- Próximos vencimentos
 
-## Como enviar link público
+## Categorias
 
-Ao criar a proposta, o sistema gera um token público seguro. Envie a URL `/p/{token}` ao cliente. O cliente não precisa de login para visualizar, aprovar ou recusar.
+As categorias ajudam a organizar receitas e despesas.
 
-## Como funcionam os planos
+Exemplos de categorias de receita:
 
-- **Gratuito**: até 3 propostas por mês, sem logo personalizada.
-- **Pro**: até 50 propostas por mês e PDF.
-- **Plus**: propostas ilimitadas, PDF e logo personalizada.
+- Serviços
+- Vendas
+- Comissões
+- Mensalidades
+- Outros recebimentos
 
-Pagamentos não estão implementados no MVP. O plano é alterado manualmente pelo admin.
+Exemplos de categorias de despesa:
 
-## Como o admin gerencia usuários e planos
+- Aluguel
+- Internet
+- Ferramentas
+- Transporte
+- Alimentação
+- Impostos
+- Outros custos
 
-A área `/admin` exige role `admin`. O admin pode:
+## Receitas
 
-- Criar, editar e desativar planos.
-- Listar usuários, ativar/desativar e alterar plano manualmente.
-- Atualizar configurações globais do aplicativo.
-- Consultar relatório básico de usuários, usuários por plano, propostas criadas e aprovadas.
+Nesta área será possível cadastrar entradas financeiras.
+
+Cada receita poderá conter:
+
+- Descrição
+- Categoria
+- Valor
+- Data prevista
+- Data de recebimento
+- Status
+- Observação
+
+## Despesas
+
+Nesta área será possível cadastrar saídas financeiras.
+
+Cada despesa poderá conter:
+
+- Descrição
+- Categoria
+- Valor
+- Data de vencimento
+- Data de pagamento
+- Status
+- Observação
+
+## Status dos lançamentos
+
+Status previstos:
+
+- Previsto
+- Pago
+- Recebido
+- Atrasado
+- Cancelado
+
+## Recorrências
+
+O sistema poderá permitir lançamentos recorrentes simples.
+
+Tipos previstos:
+
+- Sem recorrência
+- Semanal
+- Mensal
+- Anual
+
+## Relatórios
+
+Relatórios previstos:
+
+- Receitas por período
+- Despesas por período
+- Resultado mensal
+- Despesas por categoria
+- Receitas por categoria
+
+## Exportação
+
+O sistema poderá permitir exportação simples em CSV.
+
+## Planos
+
+O sistema terá plano gratuito e planos pagos configuráveis pelo painel admin.
+
+## Painel admin
+
+O admin poderá gerenciar usuários, planos, configurações globais e categorias modelo do sistema.
+
+## Aviso importante
+
+O Simple Cashbook é uma ferramenta de organização financeira. Ele não substitui contador, consultor financeiro, consultor fiscal ou orientação profissional especializada.
+
+## Observação
+
+Este manual será atualizado conforme o desenvolvimento evoluir.
